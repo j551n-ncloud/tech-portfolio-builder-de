@@ -74,7 +74,7 @@ export function Expertise() {
     {
       area: "Networking",
       experience: "Configuring and troubleshooting network setups",
-      additionalKnowledge: "LACP bonds",
+      additionalKnowledge: "LACP bonds, VLANs, routing",
       icon: <Network className="h-5 w-5 text-tech-500" />
     },
     {
@@ -112,6 +112,18 @@ export function Expertise() {
       experience: "Easy build and compiling of modules",
       additionalKnowledge: "Cross-platform compatibility, optimization techniques", 
       icon: <Code className="h-5 w-5 text-tech-500" />
+    },
+    {
+      area: "Cluster Management",
+      experience: "Setting up and maintaining high-availability clusters in corporate environments",
+      additionalKnowledge: "Failover configuration, load balancing",
+      icon: <Server className="h-5 w-5 text-tech-500" />
+    },
+    {
+      area: "Homelab Setup",
+      experience: "Building and managing personal home lab environments",
+      additionalKnowledge: "LACP bonds, virtualization, self-hosted services",
+      icon: <Network className="h-5 w-5 text-tech-500" />
     }
   ];
 
@@ -179,10 +191,10 @@ export function Expertise() {
                     <TableBody>
                       {expertiseData.map((item, index) => (
                         <TableRow key={index} className="staggered-item transition-all duration-300 hover:bg-muted/80">
-                          <TableCell>{item.icon}</TableCell>
-                          <TableCell className="font-medium text-tech-600 dark:text-tech-400">{item.area}</TableCell>
-                          <TableCell>{item.experience}</TableCell>
-                          <TableCell>{item.additionalKnowledge}</TableCell>
+                          <TableCell className="p-2">{item.icon}</TableCell>
+                          <TableCell className="p-2 font-medium text-tech-600 dark:text-tech-400">{item.area}</TableCell>
+                          <TableCell className="p-2">{item.experience}</TableCell>
+                          <TableCell className="p-2">{item.additionalKnowledge}</TableCell>
                         </TableRow>
                       ))}
                     </TableBody>
