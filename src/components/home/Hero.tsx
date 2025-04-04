@@ -11,7 +11,7 @@ export function Hero() {
   };
 
   const handleContactClick = () => {
-    window.location.href = "mailto:contact@johannesnguyen.com";
+    window.location.href = "mailto:Johannes.quangminh.nguyen@gmail.com";
   };
 
   return (
