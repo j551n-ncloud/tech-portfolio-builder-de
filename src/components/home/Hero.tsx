@@ -1,5 +1,5 @@
 
-import { ArrowDown } from "lucide-react";
+import { ArrowDown, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export function Hero() {
@@ -8,6 +8,10 @@ export function Hero() {
     if (aboutSection) {
       aboutSection.scrollIntoView({ behavior: "smooth" });
     }
+  };
+
+  const handleContactClick = () => {
+    window.location.href = "mailto:contact@johannesnguyen.com";
   };
 
   return (
@@ -40,7 +44,11 @@ export function Hero() {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4 animate-fade-up" style={{ animationDelay: "0.6s" }}>
-            <Button className="bg-tech-600 hover:bg-tech-700 btn-hover">
+            <Button 
+              className="bg-tech-600 hover:bg-tech-700 btn-hover"
+              onClick={handleContactClick}
+            >
+              <Mail className="mr-2 h-4 w-4" />
               Contact Me
             </Button>
             <Button 
