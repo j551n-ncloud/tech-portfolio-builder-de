@@ -74,7 +74,7 @@ export function Expertise() {
     {
       area: "Networking",
       experience: "Configuring and troubleshooting network setups",
-      additionalKnowledge: "LACP bonds, VLANs, routing",
+      additionalKnowledge: "LACP bonds",
       icon: <Network className="h-5 w-5 text-tech-500" />
     },
     {
@@ -112,12 +112,6 @@ export function Expertise() {
       experience: "Easy build and compiling of modules",
       additionalKnowledge: "Cross-platform compatibility, optimization techniques", 
       icon: <Code className="h-5 w-5 text-tech-500" />
-    },
-    {
-      area: "Cluster Management",
-      experience: "Managing server clusters in enterprise environments and homelab setup",
-      additionalKnowledge: "High availability, load balancing, failover configurations",
-      icon: <Server className="h-5 w-5 text-tech-500" />
     }
   ];
 
@@ -153,7 +147,7 @@ export function Expertise() {
   ];
 
   return (
-    <section id="expertise" className="py-16 md:py-24 bg-secondary animate-fade-up">
+    <section id="expertise" className="py-16 md:py-24 bg-secondary">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center mb-12 animate-fade-up">
           <h2 className="text-3xl font-bold mb-4 bg-gradient-to-r from-tech-700 to-tech-500 text-transparent bg-clip-text">My Expertise</h2>

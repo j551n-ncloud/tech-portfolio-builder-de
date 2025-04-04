@@ -10,11 +10,4 @@ if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
   document.documentElement.classList.remove('dark')
 }
 
-const rootElement = document.getElementById('root');
-
-if (!rootElement) {
-  console.error('Failed to find the root element');
-} else {
-  const root = createRoot(rootElement);
-  root.render(<App />);
-}
+createRoot(document.getElementById("root")!).render(<App />);
