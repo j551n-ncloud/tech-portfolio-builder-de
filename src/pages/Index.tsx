@@ -6,9 +6,11 @@ import { Career } from "@/components/home/Career";
 import { Expertise } from "@/components/home/Expertise";
 import { Services } from "@/components/home/Services";
 import { useEffect, useState } from "react";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 const Index = () => {
   const [isLoading, setIsLoading] = useState(true);
+  const isMobile = useIsMobile();
 
   useEffect(() => {
     // Set document title
@@ -38,7 +40,7 @@ const Index = () => {
 
   return (
     <Layout>
-      <div className="space-y-0 overflow-hidden">
+      <div className={`space-y-0 overflow-hidden ${isMobile ? 'pt-0' : ''}`}>
         <Hero />
         <About />
         <Career />

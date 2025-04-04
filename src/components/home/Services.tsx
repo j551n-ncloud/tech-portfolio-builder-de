@@ -1,8 +1,11 @@
 
 import { Server, Cloud, Book, Utensils, Activity, StickyNote, Package, Shield, GitBranch, Wrench, FileSignature, Film, BrainCircuit } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 export function Services() {
+  const isMobile = useIsMobile();
+  
   const services = [
     {
       icon: BrainCircuit,
@@ -36,7 +39,7 @@ export function Services() {
     },
     {
       icon: Activity,
-      title: "Upptime Monitoring",
+      title: "Grafana Monitoring",
       url: "monitor.j551n.com",
       description: "Real-time monitoring with interactive dashboards, custom metrics, and alerts for critical issues."
     },
@@ -92,9 +95,6 @@ export function Services() {
           <p className="text-lg text-muted-foreground mb-6">
             Welcome to J551N Services. I'm excited to present a comprehensive range of digital services tailored to meet your diverse needs.
           </p>
-          <p className="text-muted-foreground italic">
-            Photo by Andrew varnum / Unsplash
-          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -108,7 +108,7 @@ export function Services() {
                 <div className="w-12 h-12 flex items-center justify-center rounded-full bg-tech-100 text-tech-600 mb-4">
                   <service.icon className="h-6 w-6" />
                 </div>
-                <CardTitle className="text-xl">{service.title}</CardTitle>
+                <CardTitle className={`${isMobile ? 'text-lg' : 'text-xl'}`}>{service.title}</CardTitle>
                 <p className="text-sm text-tech-600 mt-1">
                   {service.url}
                 </p>

@@ -11,9 +11,9 @@ const LegalNotice = () => {
           <section className="mb-8">
             <h2 className="text-2xl font-semibold mb-4">Information according to § 5 TMG</h2>
             <p>
-              [Your Full Name]<br />
-              [Street Address]<br />
-              [Postal Code, City]<br />
+              Johannes Nguyen<br />
+              Heinrich-böll-straße 28<br />
+              68723 Oftersheim<br />
               Germany
             </p>
           </section>
@@ -21,17 +21,16 @@ const LegalNotice = () => {
           <section className="mb-8">
             <h2 className="text-2xl font-semibold mb-4">Contact</h2>
             <p>
-              Phone: [Your Phone Number]<br />
-              Email: [Your Email Address]
+              Email: johannes.quangminh.nguyen@gmail.com
             </p>
           </section>
           
           <section className="mb-8">
             <h2 className="text-2xl font-semibold mb-4">Responsible for Content according to § 55 Abs. 2 RStV</h2>
             <p>
-              [Your Full Name]<br />
-              [Street Address]<br />
-              [Postal Code, City]<br />
+              Johannes Nguyen<br />
+              Heinrich-böll-straße 28<br />
+              68723 Oftersheim<br />
               Germany
             </p>
           </section>

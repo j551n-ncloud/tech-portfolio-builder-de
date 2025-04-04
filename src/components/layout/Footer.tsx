@@ -1,8 +1,11 @@
 
 import { Link } from "react-router-dom";
 import { Github, Mail } from "lucide-react";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 export function Footer() {
+  const isMobile = useIsMobile();
+  
   return (
     <footer className="bg-muted py-8 border-t">
       <div className="container mx-auto px-4">
@@ -28,11 +31,6 @@ export function Footer() {
               <li>
                 <Link to="/" className="text-muted-foreground hover:text-tech-500 transition-colors">
                   Home
-                </Link>
-              </li>
-              <li>
-                <Link to="/#about" className="text-muted-foreground hover:text-tech-500 transition-colors">
-                  About Myself
                 </Link>
               </li>
               <li>
@@ -64,16 +62,35 @@ export function Footer() {
             </ul>
             
             <h3 className="font-bold text-lg mt-6">Services</h3>
-            <ul className="space-y-2">
-              <li><a href="https://cloud.j551n.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-tech-500 transition-colors">Cloud</a></li>
-              <li><a href="https://bookstack.j551n.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-tech-500 transition-colors">Bookstack</a></li>
-              <li><a href="https://repo.j551n.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-tech-500 transition-colors">Repo</a></li>
-              <li><a href="https://notes.j551n.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-tech-500 transition-colors">Notes</a></li>
-              <li><a href="https://recipe.j551n.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-tech-500 transition-colors">Recipe</a></li>
-              <li><a href="https://sign.j551n.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-tech-500 transition-colors">Docuseal</a></li>
-              <li><a href="https://gitlab.j551n.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-tech-500 transition-colors">Gitlab</a></li>
-              <li><a href="https://tools.j551n.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-tech-500 transition-colors">IT Tools</a></li>
-            </ul>
+            <div className={isMobile ? "grid grid-cols-2 gap-2" : "space-y-2"}>
+              <div className={isMobile ? "" : "mb-2"}>
+                <a href="https://anki.j551n.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-tech-500 transition-colors">Anki Cards</a>
+              </div>
+              <div className={isMobile ? "" : "mb-2"}>
+                <a href="https://cloud.j551n.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-tech-500 transition-colors">Cloud</a>
+              </div>
+              <div className={isMobile ? "" : "mb-2"}>
+                <a href="https://bookstack.j551n.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-tech-500 transition-colors">Bookstack</a>
+              </div>
+              <div className={isMobile ? "" : "mb-2"}>
+                <a href="https://repo.j551n.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-tech-500 transition-colors">Repo</a>
+              </div>
+              <div className={isMobile ? "" : "mb-2"}>
+                <a href="https://notes.j551n.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-tech-500 transition-colors">Notes</a>
+              </div>
+              <div className={isMobile ? "" : "mb-2"}>
+                <a href="https://recipe.j551n.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-tech-500 transition-colors">Recipe</a>
+              </div>
+              <div className={isMobile ? "" : "mb-2"}>
+                <a href="https://sign.j551n.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-tech-500 transition-colors">Docuseal</a>
+              </div>
+              <div className={isMobile ? "" : "mb-2"}>
+                <a href="https://gitlab.j551n.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-tech-500 transition-colors">Gitlab</a>
+              </div>
+              <div className={isMobile ? "" : "mb-2"}>
+                <a href="https://tools.j551n.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-tech-500 transition-colors">IT Tools</a>
+              </div>
+            </div>
           </div>
         </div>
         
