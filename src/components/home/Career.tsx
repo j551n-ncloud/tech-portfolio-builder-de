@@ -68,7 +68,13 @@ export function Career() {
                 className={`relative flex flex-col md:flex-row ${index % 2 === 0 ? 'md:flex-row-reverse' : ''} animate-fade-in`}
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className={`w-full md:w-1/2 ${index % 2 === 0 ? 'md:pr-12 md:text-right' : 'md:pl-12'}`}>
+                {/* Timeline node - Fixed position for mobile */}
+                <div className="absolute left-0 md:left-1/2 top-6 md:top-1/2 md:transform md:-translate-x-1/2 md:-translate-y-1/2 flex items-center justify-center w-12 h-12 rounded-full bg-tech-100 text-tech-600 border border-tech-200 z-10 animate-scale-in" style={{ animationDelay: `${index * 0.15}s` }}>
+                  <item.icon className="h-5 w-5" />
+                </div>
+                
+                {/* Content box with sufficient left padding on mobile */}
+                <div className={`w-full md:w-1/2 ${index % 2 === 0 ? 'md:pr-12 md:text-right' : 'md:pl-12'} pl-16 md:pl-0`}>
                   <div className="bg-card p-6 rounded-lg shadow-sm border hover:shadow-md transition-all duration-300 hover:translate-y-[-5px]">
                     <div className="flex items-center justify-between mb-3">
                       <h3 className="font-bold text-xl">{item.company}</h3>
@@ -79,11 +85,6 @@ export function Career() {
                     </div>
                     <p className="text-muted-foreground">{item.role}</p>
                   </div>
-                </div>
-
-                {/* Timeline node - Positioned differently on mobile vs desktop */}
-                <div className="absolute left-0 top-6 md:left-1/2 md:top-auto md:transform md:-translate-x-1/2 flex items-center justify-center w-12 h-12 rounded-full bg-tech-100 text-tech-600 border border-tech-200 z-10 animate-scale-in" style={{ animationDelay: `${index * 0.15}s` }}>
-                  <item.icon className="h-5 w-5" />
                 </div>
               </div>
             ))}
