@@ -12,6 +12,7 @@ import Legal from "./pages/Legal";
 import LegalPrivacy from "./pages/LegalPrivacy";
 import LegalNotice from "./pages/LegalNotice";
 import NotFound from "./pages/NotFound";
+import ArticleView from "./pages/ArticleView";
 
 const queryClient = new QueryClient();
 
@@ -29,6 +30,7 @@ const App = () => (
               <Route path="/legal" element={<Legal />} />
               <Route path="/legal/privacy" element={<LegalPrivacy />} />
               <Route path="/legal/notice" element={<LegalNotice />} />
+              <Route path="/articles/:slug" element={<ArticleView />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </BrowserRouter>

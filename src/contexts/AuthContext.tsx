@@ -116,10 +116,9 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         localStorage.setItem("user", JSON.stringify(updatedUser));
       }
       
-      toast.success("Profile updated successfully");
       return true;
     } catch (error) {
-      toast.error("Failed to update profile");
+      console.error("Failed to update profile:", error);
       return false;
     }
   };
