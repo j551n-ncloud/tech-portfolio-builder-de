@@ -11,10 +11,9 @@ const LegalPrivacy = () => {
           <section className="mb-8">
             <h2 className="text-2xl font-semibold mb-4">1. Responsible Party</h2>
             <p className="mb-4">
-              Name: [Your Name]<br />
-              Address: [Your Address]<br />
-              Email: [Your Email]<br />
-              Phone: [Your Phone Number]
+              Name: Johannes Nguyen<br />
+              Address: Heinrich-böll-straße 28, 68723 Oftersheim, Germany<br />
+              Email: Johannes.quangminh.nguyen@gmail.com<br />
             </p>
             <p>
               As the operator of this website, I take the protection of your personal data very seriously. I collect and process personal data in compliance with the applicable data protection regulations, in particular the EU General Data Protection Regulation (GDPR) and the German Federal Data Protection Act (BDSG).
