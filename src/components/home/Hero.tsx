@@ -15,8 +15,11 @@ export function Hero() {
       <div className="container mx-auto px-4 flex flex-col items-center justify-center text-center">
         <div className="max-w-3xl mx-auto space-y-6 fade-up">
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
-            IT Technician & <span className="text-tech-600">System Administrator</span>
+            Johannes Nguyen
           </h1>
+          <h2 className="text-2xl md:text-4xl font-bold">
+            IT Technician & <span className="text-tech-600">System Administrator</span>
+          </h2>
           <p className="text-xl text-muted-foreground">
             Passionate about Linux, virtualization, and infrastructure as code. Currently working at the German Cancer Research Center.
           </p>

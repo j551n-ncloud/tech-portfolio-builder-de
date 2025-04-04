@@ -11,8 +11,11 @@ export function Navbar() {
   
   const navItems = [
     { name: "Home", path: "/" },
-    { name: "About", path: "/#about" },
+    { name: "About Myself", path: "/#about" },
+    { name: "Career History", path: "/#career" },
     { name: "Expertise", path: "/#expertise" },
+    { name: "Services", path: "/#services" },
+    { name: "Articles", path: "/#articles" },
     { name: "Editor", path: "/editor" },
     { name: "Legal", path: "/legal" }
   ];
@@ -21,7 +24,8 @@ export function Navbar() {
     <header className="fixed w-full bg-background/80 backdrop-blur-sm z-50 border-b">
       <nav className="container mx-auto px-4 py-3 flex items-center justify-between">
         <Link to="/" className="flex items-center space-x-2">
-          <span className="font-bold text-lg text-tech-700">TechPortfolio</span>
+          <img src="https://j551n.com/content/images/2024/06/Screenshot-2024-04-06-190141.png" alt="J551N" className="h-8 w-8" />
+          <span className="font-bold text-lg text-tech-700">Johannes Nguyen</span>
         </Link>
 
         {/* Desktop Navigation */}
