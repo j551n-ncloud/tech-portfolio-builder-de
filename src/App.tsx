@@ -7,12 +7,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { AuthProvider } from "@/contexts/AuthContext";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import Index from "./pages/Index";
-import Editor from "./pages/Editor";
 import Legal from "./pages/Legal";
 import LegalPrivacy from "./pages/LegalPrivacy";
 import LegalNotice from "./pages/LegalNotice";
 import NotFound from "./pages/NotFound";
-import ArticleView from "./pages/ArticleView";
+import ADHDStory from "./pages/ADHDStory";
+import Homelab from "./pages/Homelab";
 
 const queryClient = new QueryClient();
 
@@ -26,11 +26,11 @@ const App = () => (
           <BrowserRouter>
             <Routes>
               <Route path="/" element={<Index />} />
-              <Route path="/editor" element={<Editor />} />
+              <Route path="/adhd-story" element={<ADHDStory />} />
+              <Route path="/homelab" element={<Homelab />} />
               <Route path="/legal" element={<Legal />} />
               <Route path="/legal/privacy" element={<LegalPrivacy />} />
               <Route path="/legal/notice" element={<LegalNotice />} />
-              <Route path="/articles/:slug" element={<ArticleView />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </BrowserRouter>

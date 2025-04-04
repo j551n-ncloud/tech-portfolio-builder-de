@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import { Github, Mail } from "lucide-react";
 
@@ -35,28 +36,13 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/#career" className="text-muted-foreground hover:text-tech-500 transition-colors">
-                  Career History
+                <Link to="/adhd-story" className="text-muted-foreground hover:text-tech-500 transition-colors">
+                  ADHD Story
                 </Link>
               </li>
               <li>
-                <Link to="/#expertise" className="text-muted-foreground hover:text-tech-500 transition-colors">
-                  My Expertise
-                </Link>
-              </li>
-              <li>
-                <Link to="/#services" className="text-muted-foreground hover:text-tech-500 transition-colors">
-                  Services
-                </Link>
-              </li>
-              <li>
-                <Link to="/#articles" className="text-muted-foreground hover:text-tech-500 transition-colors">
-                  Articles
-                </Link>
-              </li>
-              <li>
-                <Link to="/editor" className="text-muted-foreground hover:text-tech-500 transition-colors">
-                  Markdown Editor
+                <Link to="/homelab" className="text-muted-foreground hover:text-tech-500 transition-colors">
+                  Homelab
                 </Link>
               </li>
             </ul>

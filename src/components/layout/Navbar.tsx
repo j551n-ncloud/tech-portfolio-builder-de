@@ -1,5 +1,5 @@
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -7,51 +7,18 @@ import { ThemeToggle } from "@/components/theme/ThemeToggle";
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [quickLinks, setQuickLinks] = useState<string[]>([]);
   const location = useLocation();
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   
-  useEffect(() => {
-    // Load quick links from localStorage
-    const links = localStorage.getItem("quick-links");
-    if (links) {
-      setQuickLinks(JSON.parse(links));
-    }
-  }, [location.pathname]); // Reload when path changes
-  
   // Base navigation items
-  const baseNavItems = [
+  const navItems = [
     { name: "Home", path: "/" },
     { name: "About Myself", path: "/#about" },
-    { name: "Articles", path: "/#articles" },
-    { name: "Editor", path: "/editor" },
+    { name: "ADHD Story", path: "/adhd-story" },
+    { name: "Homelab", path: "/homelab" },
     { name: "Legal", path: "/legal" }
   ];
-  
-  // Construct navigation with quick links
-  const navItems = [
-    ...baseNavItems.filter(item => 
-      item.name !== "About Myself" || 
-      !quickLinks.includes("About")
-    )
-  ];
-  
-  // Add quick links that aren't already in the base navigation
-  quickLinks.forEach(link => {
-    const normalizedLink = link.toLowerCase().replace(/\s+/g, '-');
-    const path = `/#${normalizedLink}`;
-    
-    // Check if this link already exists in our navigation
-    const exists = navItems.some(item => 
-      item.name.toLowerCase() === link.toLowerCase() || 
-      item.path === path
-    );
-    
-    if (!exists) {
-      navItems.push({ name: link, path });
-    }
-  });
 
   return (
     <header className="fixed w-full bg-background/80 backdrop-blur-sm z-50 border-b border-border transition-colors duration-200">
