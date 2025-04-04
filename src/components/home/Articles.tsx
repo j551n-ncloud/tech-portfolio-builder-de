@@ -11,14 +11,14 @@ export function Articles() {
       date: "Jun 9, 2024",
       excerpt: "In the realm of home labs, the pursuit of building and experimenting with various server configurations is a passion shared by many enthusiasts. In this article, I'll take you through my personal homelab setup, comprising three Proxmox nodes, each serving a specific purpose within my network infrastructure.",
       tags: ["Infrastructure", "Proxmox", "Homelab"],
-      link: "#"
+      link: "/editor" // Redirecting to editor for now as placeholder
     },
     {
       title: "The Life of NJ: Growing Up with ADHD as a Child of Vietnamese Immigrants in Germany",
       date: "Jul 30, 2024",
       excerpt: "Life can be a complex journey, and for someone with ADHD, the path is often filled with unique challenges and triumphs. This manuscript explores my life, growing up with ADHD as the oldest child of Vietnamese immigrants in Germany, and the various experiences that have shaped who I am today.",
       tags: ["Personal", "ADHD", "Life Story"],
-      link: "#"
+      link: "/editor" // Redirecting to editor for now as placeholder
     }
   ];
 
@@ -36,7 +36,8 @@ export function Articles() {
           {articles.map((article, index) => (
             <Card 
               key={index} 
-              className="bg-card border-border hover:shadow-md transition-all duration-300 hover:translate-y-[-5px] h-full flex flex-col group dark:bg-card/80"
+              className="bg-card border-border hover:shadow-md transition-all duration-300 hover:translate-y-[-5px] h-full flex flex-col group dark:bg-card/80 animate-fade-in"
+              style={{ animationDelay: `${index * 0.2}s` }}
             >
               <CardHeader className="p-6 pb-0">
                 <div className="flex flex-wrap gap-2 mb-3">
@@ -51,7 +52,7 @@ export function Articles() {
                   {article.title}
                 </CardTitle>
               </CardHeader>
-              <CardContent className="p-6 pt-0 flex-grow flex flex-col">
+              <CardContent className="p-6 pt-4 flex-grow flex flex-col">
                 <p className="text-muted-foreground mb-6 line-clamp-4 flex-grow">
                   {article.excerpt}
                 </p>

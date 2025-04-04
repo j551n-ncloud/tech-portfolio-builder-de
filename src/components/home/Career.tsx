@@ -50,7 +50,7 @@ export function Career() {
   return (
     <section id="career" className="py-16 md:py-24 bg-gradient-to-b from-background to-muted">
       <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto text-center mb-12">
+        <div className="max-w-4xl mx-auto text-center mb-12 animate-fade-up">
           <h2 className="text-3xl font-bold mb-4">Career History</h2>
           <p className="text-lg text-muted-foreground">
             My professional journey and work experience
@@ -63,9 +63,13 @@ export function Career() {
 
           <div className="space-y-12">
             {careerItems.map((item, index) => (
-              <div key={index} className={`relative flex items-center ${index % 2 === 0 ? 'flex-row-reverse' : ''} md:flex-row`}>
+              <div 
+                key={index} 
+                className={`relative flex items-center ${index % 2 === 0 ? 'flex-row-reverse' : ''} md:flex-row animate-fade-in`}
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
                 <div className={`w-full md:w-1/2 ${index % 2 === 0 ? 'md:pr-12 text-right' : 'md:pl-12'}`}>
-                  <div className="bg-card p-6 rounded-lg shadow-sm border hover:shadow-md transition-shadow">
+                  <div className="bg-card p-6 rounded-lg shadow-sm border hover:shadow-md transition-all duration-300 hover:translate-y-[-5px]">
                     <div className="flex items-center justify-between mb-3">
                       <h3 className="font-bold text-xl">{item.company}</h3>
                       <div className="flex items-center text-muted-foreground">
@@ -78,18 +82,12 @@ export function Career() {
                 </div>
 
                 {/* Timeline node */}
-                <div className="absolute left-1/2 transform -translate-x-1/2 flex items-center justify-center w-12 h-12 rounded-full bg-tech-100 text-tech-600 border border-tech-200 z-10">
+                <div className="absolute left-1/2 transform -translate-x-1/2 flex items-center justify-center w-12 h-12 rounded-full bg-tech-100 text-tech-600 border border-tech-200 z-10 animate-scale-in" style={{ animationDelay: `${index * 0.15}s` }}>
                   <item.icon className="h-5 w-5" />
                 </div>
               </div>
             ))}
           </div>
-        </div>
-
-        <div className="mt-16 max-w-3xl mx-auto text-center">
-          <p className="text-muted-foreground italic">
-            Photo by Alexandre Debiève / Unsplash
-          </p>
         </div>
       </div>
     </section>

@@ -1,6 +1,5 @@
 
 import { 
-  CheckCircle2,
   Terminal,
   Server,
   Database,
@@ -33,13 +32,13 @@ export function Expertise() {
     {
       area: "General Support",
       experience: "Comprehensive support for technical needs and issues",
-      additionalKnowledge: "-",
+      additionalKnowledge: "User training and documentation",
       icon: <Settings className="h-5 w-5 text-tech-500" />
     },
     {
       area: "Docker",
       experience: "Configuring Docker containers, managing, and troubleshooting",
-      additionalKnowledge: "-",
+      additionalKnowledge: "Docker Compose, Dockerfile optimization",
       icon: <Database className="h-5 w-5 text-tech-500" />
     },
     {
@@ -57,19 +56,19 @@ export function Expertise() {
     {
       area: "Mac",
       experience: "Basic support",
-      additionalKnowledge: "-",
+      additionalKnowledge: "Troubleshooting and configuration",
       icon: <Laptop className="h-5 w-5 text-tech-500" />
     },
     {
       area: "Kubernetes",
       experience: "Container orchestration, deployment, and scaling",
-      additionalKnowledge: "-",
+      additionalKnowledge: "Helm charts, custom operators",
       icon: <Globe className="h-5 w-5 text-tech-500" />
     },
     {
       area: "Ansible",
       experience: "Automation and configuration management",
-      additionalKnowledge: "-",
+      additionalKnowledge: "Playbook development, inventory management",
       icon: <Settings className="h-5 w-5 text-tech-500" />
     },
     {
@@ -81,37 +80,37 @@ export function Expertise() {
     {
       area: "CI/CD",
       experience: "Implementing and managing continuous integration and deployment pipelines",
-      additionalKnowledge: "-",
+      additionalKnowledge: "GitHub Actions, Jenkins",
       icon: <Code className="h-5 w-5 text-tech-500" />
     },
     {
       area: "Bash Scripting",
       experience: "Writing and maintaining scripts for automation and system administration",
-      additionalKnowledge: "-",
+      additionalKnowledge: "Advanced shell utilities, performance optimization",
       icon: <Terminal className="h-5 w-5 text-tech-500" />
     },
     {
       area: "Server Maintenance",
       experience: "Regular upkeep, monitoring, and troubleshooting of server systems",
-      additionalKnowledge: "-",
+      additionalKnowledge: "Proactive monitoring, performance tuning",
       icon: <Server className="h-5 w-5 text-tech-500" />
     },
     {
       area: "RStudio Server",
       experience: "Installation, configuration, and maintenance",
-      additionalKnowledge: "-",
+      additionalKnowledge: "User management, package administration",
       icon: <Cpu className="h-5 w-5 text-tech-500" />
     },
     {
       area: "AXW-Operator",
       experience: "4 years of experience working with AXW-Operator",
-      additionalKnowledge: "-",
+      additionalKnowledge: "Advanced troubleshooting, customization",
       icon: <Settings className="h-5 w-5 text-tech-500" />
     },
     {
       area: "Build & Compiling",
       experience: "Easy build and compiling of modules",
-      additionalKnowledge: "-", 
+      additionalKnowledge: "Cross-platform compatibility, optimization techniques", 
       icon: <Code className="h-5 w-5 text-tech-500" />
     }
   ];
