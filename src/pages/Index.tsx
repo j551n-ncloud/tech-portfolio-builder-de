@@ -12,6 +12,9 @@ const Index = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
+    // Set document title
+    document.title = "Homepage | Johannes Nguyen";
+    
     // Simulate page loading
     const timer = setTimeout(() => {
       setIsLoading(false);
@@ -22,13 +25,13 @@ const Index = () => {
   if (isLoading) {
     return (
       <div className="flex items-center justify-center min-h-screen bg-background">
-        <div className="text-center">
+        <div className="text-center animate-pulse">
           <img 
             src="https://j551n.com/content/images/2024/06/Screenshot-2024-04-06-190141.png" 
             alt="Logo" 
-            className="w-16 h-16 mx-auto animate-pulse mb-4"
+            className="w-16 h-16 mx-auto mb-4"
           />
-          <div className="text-2xl font-bold text-tech-600">Loading...</div>
+          <div className="text-2xl font-bold text-tech-600 dark:text-tech-400">Loading...</div>
         </div>
       </div>
     );
@@ -36,7 +39,7 @@ const Index = () => {
 
   return (
     <Layout>
-      <div className="animate-fade-in">
+      <div className="space-y-0">
         <Hero />
         <About />
         <Career />
