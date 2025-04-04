@@ -1,6 +1,5 @@
-
 import { Link } from "react-router-dom";
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Github, Mail } from "lucide-react";
 
 export function Footer() {
   return (
@@ -13,13 +12,10 @@ export function Footer() {
               System Administrator & IT Specialist with a passion for Linux and virtualization.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-muted-foreground hover:text-tech-500 transition-colors">
+              <a href="https://github.com/j551n-ncloud" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-tech-500 transition-colors">
                 <Github className="h-5 w-5" />
               </a>
-              <a href="#" className="text-muted-foreground hover:text-tech-500 transition-colors">
-                <Linkedin className="h-5 w-5" />
-              </a>
-              <a href="mailto:contact@example.com" className="text-muted-foreground hover:text-tech-500 transition-colors">
+              <a href="mailto:johannes.quangminh.nguyen@gmail.com" className="text-muted-foreground hover:text-tech-500 transition-colors">
                 <Mail className="h-5 w-5" />
               </a>
             </div>
