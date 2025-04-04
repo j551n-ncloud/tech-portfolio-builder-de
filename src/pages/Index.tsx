@@ -28,9 +28,9 @@ const Index = () => {
           <img 
             src="https://j551n.com/content/images/2024/06/Screenshot-2024-04-06-190141.png" 
             alt="Logo" 
-            className="w-16 h-16 mx-auto mb-4"
+            className="w-16 h-16 mx-auto mb-4 animate-bounce-in"
           />
-          <div className="text-2xl font-bold text-tech-600 dark:text-tech-400">Loading...</div>
+          <div className="text-2xl font-bold text-tech-600 dark:text-tech-400 animate-fade-in">Loading...</div>
         </div>
       </div>
     );
@@ -38,7 +38,7 @@ const Index = () => {
 
   return (
     <Layout>
-      <div className="space-y-0">
+      <div className="space-y-0 overflow-hidden">
         <Hero />
         <About />
         <Career />
