@@ -8,8 +8,7 @@ import {
   Laptop,
   Network,
   Globe,
-  Cpu,
-  Github
+  Cpu
 } from "lucide-react";
 import { 
   Table, 
@@ -83,12 +82,6 @@ export function Expertise() {
       experience: "Implementing and managing continuous integration and deployment pipelines",
       additionalKnowledge: "GitHub Actions, Jenkins",
       icon: <Code className="h-5 w-5 text-tech-500" />
-    },
-    {
-      area: "GitHub",
-      experience: "Version control, collaboration and project management",
-      additionalKnowledge: "Pull requests, issues, GitHub Actions workflows",
-      icon: <Github className="h-5 w-5 text-tech-500" />
     },
     {
       area: "Bash Scripting",
@@ -176,7 +169,7 @@ export function Expertise() {
         </div>
 
         <div className="mb-12">
-          <Accordion type="single" collapsible defaultValue="expertise-table" className="bg-card shadow-sm rounded-lg overflow-hidden animate-scale-in">
+          <Accordion type="single" collapsible className="bg-card shadow-sm rounded-lg overflow-hidden animate-scale-in">
             <AccordionItem value="expertise-table">
               <AccordionTrigger className="p-4 border-b font-semibold">
                 <div className="flex items-center gap-2">
