@@ -11,37 +11,37 @@ export function Career() {
     {
       period: "2021-2022",
       company: "Rheingönheim Vögele",
-      role: "Worked as NFZ Mechanic",
+      role: "Worked as Commercial Vehicle Mechanic",
       icon: Briefcase
     },
     {
       period: "2017-2021",
       company: "Mannheim Mercedes",
-      role: "Apprenticeship as Automotive Mechanic (Cars and NFZ)",
+      role: "Apprenticeship as Automotive Mechanic (Cars and Commercial Vehicles)",
       icon: Briefcase
     },
     {
       period: "2016",
       company: "Ludwigshafen BASF",
-      role: "Internship in the field of Computer Science (Bereich Informatik)",
+      role: "Internship in the field of Computer Science",
       icon: School
     },
     {
       period: "2016",
       company: "Weissach Porsche",
-      role: "BORS Internship in Prototyping and Pre-production (Bereich Prototypen und Vorproduktion)",
+      role: "BORS Internship in Prototyping and Pre-production",
       icon: School
     },
     {
       period: "2015",
       company: "Radolfzell TRW",
-      role: "Internship in Production and Material Testing (Bereich Produktion und Materialtestung)",
+      role: "Internship in Production and Material Testing",
       icon: School
     },
     {
       period: "2013",
       company: "Schwetzingen GRN",
-      role: "Internship in the field of Computer Science (Bereich Fachinformatik)",
+      role: "Internship in the field of Computer Science",
       icon: School
     }
   ];
