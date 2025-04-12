@@ -8,7 +8,8 @@ import {
   Laptop,
   Network,
   Globe,
-  Cpu
+  Cpu,
+  Github
 } from "lucide-react";
 import { 
   Table, 
@@ -82,6 +83,12 @@ export function Expertise() {
       experience: "Implementing and managing continuous integration and deployment pipelines",
       additionalKnowledge: "GitHub Actions, Jenkins",
       icon: <Code className="h-5 w-5 text-tech-500" />
+    },
+    {
+      area: "GitHub",
+      experience: "Version control, collaboration and project management",
+      additionalKnowledge: "Pull requests, issues, GitHub Actions workflows",
+      icon: <Github className="h-5 w-5 text-tech-500" />
     },
     {
       area: "Bash Scripting",
