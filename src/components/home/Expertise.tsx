@@ -169,7 +169,7 @@ export function Expertise() {
         </div>
 
         <div className="mb-12">
-          <Accordion type="single" collapsible className="bg-card shadow-sm rounded-lg overflow-hidden animate-scale-in">
+          <Accordion type="single" collapsible defaultValue="expertise-table" className="bg-card shadow-sm rounded-lg overflow-hidden animate-scale-in">
             <AccordionItem value="expertise-table">
               <AccordionTrigger className="p-4 border-b font-semibold">
                 <div className="flex items-center gap-2">
