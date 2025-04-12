@@ -8,7 +8,8 @@ import {
   Laptop,
   Network,
   Globe,
-  Cpu
+  Cpu,
+  Github
 } from "lucide-react";
 import { 
   Table, 
@@ -124,6 +125,12 @@ export function Expertise() {
       experience: "Building and managing personal home lab environments",
       additionalKnowledge: "LACP bonds, virtualization, self-hosted services",
       icon: <Network className="h-5 w-5 text-tech-500" />
+    },
+    {
+      area: "GitHub",
+      experience: "Version control and collaborative development",
+      additionalKnowledge: "Pull requests, issues, project management",
+      icon: <Github className="h-5 w-5 text-tech-500" />
     }
   ];
 
@@ -169,7 +176,7 @@ export function Expertise() {
         </div>
 
         <div className="mb-12">
-          <Accordion type="single" collapsible className="bg-card shadow-sm rounded-lg overflow-hidden animate-scale-in">
+          <Accordion type="single" collapsible defaultValue="expertise-table" className="bg-card shadow-sm rounded-lg overflow-hidden animate-scale-in">
             <AccordionItem value="expertise-table">
               <AccordionTrigger className="p-4 border-b font-semibold">
                 <div className="flex items-center gap-2">
@@ -190,7 +197,7 @@ export function Expertise() {
                     </TableHeader>
                     <TableBody>
                       {expertiseData.map((item, index) => (
-                        <TableRow key={index} className="staggered-item transition-all duration-300 hover:bg-muted/80">
+                        <TableRow key={index} className="transition-all duration-300 hover:bg-muted/80">
                           <TableCell className="p-2">{item.icon}</TableCell>
                           <TableCell className="p-2 font-medium text-tech-600 dark:text-tech-400">{item.area}</TableCell>
                           <TableCell className="p-2">{item.experience}</TableCell>
@@ -210,7 +217,7 @@ export function Expertise() {
           
           <div className="grid md:grid-cols-2 gap-6 mb-8">
             {keySkills.slice(0, 4).map((skill, index) => (
-              <Card key={index} className="staggered-item card-hover border-tech-100 dark:border-tech-800/30 overflow-hidden">
+              <Card key={index} className="card-hover border-tech-100 dark:border-tech-800/30 overflow-hidden">
                 <CardContent className="p-6">
                   <div className="flex gap-3 items-start">
                     {skill.icon}
@@ -223,7 +230,7 @@ export function Expertise() {
           
           <div className="grid md:grid-cols-3 gap-6">
             {keySkills.slice(4).map((skill, index) => (
-              <Card key={index} className="staggered-item card-hover border-tech-100 dark:border-tech-800/30 overflow-hidden">
+              <Card key={index} className="card-hover border-tech-100 dark:border-tech-800/30 overflow-hidden">
                 <CardContent className="p-6">
                   <div className="flex gap-3 items-start">
                     {skill.icon}
