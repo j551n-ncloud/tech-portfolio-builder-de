@@ -23,7 +23,7 @@ export function Career() {
     {
       period: "2016",
       company: "Ludwigshafen BASF",
-      role: "Internship in the field of Computer Science",
+      role: "2-week school-required internship in the field of Computer Science",
       icon: School
     },
     {
@@ -35,13 +35,13 @@ export function Career() {
     {
       period: "2015",
       company: "Radolfzell TRW",
-      role: "Internship in Production and Material Testing",
+      role: "2-week school-required internship in Production and Material Testing",
       icon: School
     },
     {
       period: "2013",
       company: "Schwetzingen GRN",
-      role: "Internship in the field of Computer Science",
+      role: "2-week school-required internship in the field of Computer Science",
       icon: School
     }
   ];
