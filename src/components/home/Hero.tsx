@@ -35,7 +35,7 @@ export function Hero() {
           </h1>
           
           <h2 className="text-2xl md:text-4xl font-bold animate-fade-up" style={{ animationDelay: "0.2s" }}>
-            IT Technician, <span className="text-tech-600">System Administrator</span>, Intern & Homelab Enthusiast
+            IT Technician, <span className="text-tech-600">System Administrator</span>, Apprentice & Homelab Enthusiast
           </h2>
           
           <p className="text-xl text-muted-foreground animate-fade-up" style={{ animationDelay: "0.4s" }}>
