@@ -1,6 +1,4 @@
-Got it! Here’s an updated version of the `README.md` with the correct website URL:
 
----
 
 # Johannes Nguyen Portfolio
 
@@ -92,6 +90,3 @@ Feel free to fork the repo and submit pull requests! Suggestions and improvement
 
 This project is licensed under the MIT License.
 
----
-
-Let me know if you need any further modifications!
