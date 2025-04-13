@@ -55,9 +55,9 @@ export function Expertise() {
       icon: <Server className="h-5 w-5 text-tech-500" />
     },
     {
-      area: "Mac",
-      experience: "Basic support",
-      additionalKnowledge: "Troubleshooting and configuration",
+      area: "Fullstack Developer",
+      experience: "I have some experience with fullstack development.",
+      additionalKnowledge: "Typescript, Supabase, Javascript, Vite, Express",
       icon: <Laptop className="h-5 w-5 text-tech-500" />
     },
     {
@@ -104,7 +104,7 @@ export function Expertise() {
     },
     {
       area: "AXW-Operator",
-      experience: "4 years of experience working with AXW-Operator",
+      experience: "1 1/2 years of experience working with AXW-Operator",
       additionalKnowledge: "Advanced troubleshooting, customization",
       icon: <Settings className="h-5 w-5 text-tech-500" />
     },
