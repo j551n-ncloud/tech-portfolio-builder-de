@@ -27,13 +27,13 @@ export function Expertise() {
     {
       area: "Proxmox",
       experience: "Creating, managing, and configuring VMs and LXC containers",
-      additionalKnowledge: "GPU Passthrough",
+      additionalKnowledge: "GPU Passthrough, Ceph, Clustering, Configuring",
       icon: <Server className="h-5 w-5 text-tech-500" />
     },
     {
       area: "General Support",
       experience: "Comprehensive support for technical needs and issues",
-      additionalKnowledge: "User training and documentation",
+      additionalKnowledge: "User training and documentation, Mac & Windows Support, Linux support",
       icon: <Settings className="h-5 w-5 text-tech-500" />
     },
     {
@@ -45,7 +45,7 @@ export function Expertise() {
     {
       area: "Linux",
       experience: "Managing services like Nextcloud, Docker, and NAS applications",
-      additionalKnowledge: "cgroups/systemd resource control, CentOS, auditing users via auditd",
+      additionalKnowledge: "cgroups/systemd resource control, RHEL, auditing users via auditd",
       icon: <Terminal className="h-5 w-5 text-tech-500" />
     },
     {
@@ -56,32 +56,32 @@ export function Expertise() {
     },
     {
       area: "Fullstack Developer",
-      experience: "I have some experience with fullstack development.",
+      experience: "Partial fullstack development.",
       additionalKnowledge: "Typescript, Supabase, Javascript, Vite, Express",
       icon: <Laptop className="h-5 w-5 text-tech-500" />
     },
     {
       area: "Kubernetes",
       experience: "Container orchestration, deployment, and scaling",
-      additionalKnowledge: "Helm charts, custom operators",
+      additionalKnowledge: "Helm charts, custom operators, Deployment of K3S behind Proxy",
       icon: <Globe className="h-5 w-5 text-tech-500" />
     },
     {
       area: "Ansible",
       experience: "Automation and configuration management",
-      additionalKnowledge: "Playbook development, inventory management",
+      additionalKnowledge: "Playbook development, inventory management, Playbook integration with AWX",
       icon: <Settings className="h-5 w-5 text-tech-500" />
     },
     {
       area: "Networking",
       experience: "Configuring and troubleshooting network setups",
-      additionalKnowledge: "LACP bonds, VLANs, routing",
+      additionalKnowledge: "LACP bonds, VLANs, routing, IPAM, Netbox",
       icon: <Network className="h-5 w-5 text-tech-500" />
     },
     {
       area: "CI/CD",
       experience: "Implementing and managing continuous integration and deployment pipelines",
-      additionalKnowledge: "GitHub Actions, Jenkins",
+      additionalKnowledge: "GitHub Actions, Jenkins, Gitlab CI/CD",
       icon: <Code className="h-5 w-5 text-tech-500" />
     },
     {
@@ -93,18 +93,18 @@ export function Expertise() {
     {
       area: "Server Maintenance",
       experience: "Regular upkeep, monitoring, and troubleshooting of server systems",
-      additionalKnowledge: "Proactive monitoring, performance tuning",
+      additionalKnowledge: "Proactive monitoring, performance tuning, Grafana",
       icon: <Server className="h-5 w-5 text-tech-500" />
     },
     {
       area: "RStudio Server",
       experience: "Installation, configuration, and maintenance",
-      additionalKnowledge: "User management, package administration",
+      additionalKnowledge: "License management",
       icon: <Cpu className="h-5 w-5 text-tech-500" />
     },
     {
       area: "AXW-Operator",
-      experience: "1 1/2 years of experience working with AXW-Operator",
+      experience: "1 & 1/2 years of experience working with AXW-Operator",
       additionalKnowledge: "Advanced troubleshooting, customization",
       icon: <Settings className="h-5 w-5 text-tech-500" />
     },
@@ -117,13 +117,13 @@ export function Expertise() {
     {
       area: "Cluster Management",
       experience: "Setting up and maintaining high-availability clusters in corporate environments",
-      additionalKnowledge: "Failover configuration, load balancing",
+      additionalKnowledge: "Failover configuration, load balancing, Some LSF Knowledge",
       icon: <Server className="h-5 w-5 text-tech-500" />
     },
     {
       area: "Homelab Setup",
       experience: "Building and managing personal home lab environments",
-      additionalKnowledge: "LACP bonds, virtualization, self-hosted services",
+      additionalKnowledge: "LACP bonds, virtualization, self-hosted services, Proxmox, Tailscale",
       icon: <Network className="h-5 w-5 text-tech-500" />
     },
     {
