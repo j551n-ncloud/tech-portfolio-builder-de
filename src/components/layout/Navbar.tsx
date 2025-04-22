@@ -49,7 +49,7 @@ export function Navbar() {
     }`}>
       <nav className="container mx-auto px-4 py-3 flex items-center justify-between">
         <Link to="/" className="flex items-center space-x-2 transition-transform hover:scale-105">
-          <img src="https://j551n.com/content/images/2024/06/Screenshot-2024-04-06-190141.png" alt="J551N" className="h-8 w-8" />
+          <img src="https://bookstack.j551n.com/uploads/images/system/2024-08/screenshot-2024-04-06-190141.png" alt="J551N" className="h-8 w-8" />
           <span className="font-bold text-lg text-tech-700 dark:text-tech-400">Johannes Nguyen</span>
         </Link>
 
