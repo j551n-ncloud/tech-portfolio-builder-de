@@ -17,14 +17,14 @@ export function Hero() {
   return (
     <section className="relative bg-gradient-to-b from-tech-50 to-background py-24 md:py-32 overflow-hidden">
       <div className="absolute inset-0 z-0">
-        <div className="absolute top-0 left-0 w-full h-full bg-[url('https://j551n.com/content/images/2024/06/Screenshot-2024-04-06-190141.png')] bg-no-repeat bg-center opacity-5 blur-xl"></div>
+        <div className="absolute top-0 left-0 w-full h-full bg-[url('https://bookstack.j551n.com/uploads/images/system/2024-08/screenshot-2024-04-06-190141.png')] bg-no-repeat bg-center opacity-5 blur-xl"></div>
       </div>
       
       <div className="container mx-auto px-4 flex flex-col items-center justify-center text-center relative z-10">
         <div className="max-w-3xl mx-auto space-y-6">
           <div className="inline-block mb-2 animate-bounce-in">
             <img 
-              src="https://j551n.com/content/images/2024/06/Screenshot-2024-04-06-190141.png" 
+              src="https://bookstack.j551n.com/uploads/images/system/2024-08/screenshot-2024-04-06-190141.png" 
               alt="Logo" 
               className="w-20 h-20 mx-auto mb-4 rounded-full border-2 border-tech-200 shadow-lg"
             />

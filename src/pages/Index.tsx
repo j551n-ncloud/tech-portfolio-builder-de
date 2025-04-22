@@ -28,7 +28,7 @@ const Index = () => {
       <div className="flex items-center justify-center min-h-screen bg-background">
         <div className="text-center animate-pulse">
           <img 
-            src="https://j551n.com/content/images/2024/06/Screenshot-2024-04-06-190141.png" 
+            src="https://bookstack.j551n.com/uploads/images/system/2024-08/screenshot-2024-04-06-190141.png" 
             alt="Logo" 
             className="w-16 h-16 mx-auto mb-4 animate-bounce-in"
           />
