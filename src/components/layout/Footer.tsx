@@ -5,28 +5,29 @@ import { useIsMobile } from "@/hooks/use-mobile";
 
 export function Footer() {
   const isMobile = useIsMobile();
+  const currentYear = new Date().getFullYear();
   
   return (
-    <footer className="bg-muted py-8 border-t">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="space-y-4">
+    <footer className="bg-background py-12 border-t border-border">
+      <div className="container mx-auto px-8">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
+          <div className="md:col-span-4 space-y-4">
             <h3 className="font-bold text-lg">Johannes Nguyen</h3>
             <p className="text-muted-foreground">
               System Administrator & IT Specialist with a passion for Linux and virtualization.
             </p>
             <div className="flex space-x-4">
-              <a href="https://github.com/j551n-ncloud" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-tech-500 transition-colors">
+              <a href="https://github.com/j551n-ncloud" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-tech-500 transition-colors">
                 <Github className="h-5 w-5" />
               </a>
-              <a href="mailto:johannes.quangminh.nguyen@gmail.com" className="text-muted-foreground hover:text-tech-500 transition-colors">
+              <a href="mailto:johannes.quangminh.nguyen@gmail.com" className="text-foreground hover:text-tech-500 transition-colors">
                 <Mail className="h-5 w-5" />
               </a>
             </div>
           </div>
           
-          <div className="space-y-4">
-            <h3 className="font-bold text-lg">Quick Links</h3>
+          <div className="md:col-span-2 space-y-4">
+            <h3 className="font-bold text-lg">Links</h3>
             <ul className="space-y-2">
               <li>
                 <Link to="/" className="text-muted-foreground hover:text-tech-500 transition-colors">
@@ -46,7 +47,7 @@ export function Footer() {
             </ul>
           </div>
           
-          <div className="space-y-4">
+          <div className="md:col-span-2 space-y-4">
             <h3 className="font-bold text-lg">Legal</h3>
             <ul className="space-y-2">
               <li>
@@ -60,42 +61,41 @@ export function Footer() {
                 </Link>
               </li>
             </ul>
-            
-            <h3 className="font-bold text-lg mt-6">Services</h3>
-            <div className={isMobile ? "grid grid-cols-2 gap-2" : "space-y-2"}>
-              <div className={isMobile ? "" : "mb-2"}>
+          </div>
+          
+          <div className="md:col-span-4 space-y-4">
+            <h3 className="font-bold text-lg">Services</h3>
+            <div className="grid grid-cols-2 gap-y-2">
+              <div>
                 <a href="https://anki.j551n.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-tech-500 transition-colors">Anki Cards</a>
               </div>
-              <div className={isMobile ? "" : "mb-2"}>
+              <div>
                 <a href="https://cloud.j551n.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-tech-500 transition-colors">Cloud</a>
               </div>
-              <div className={isMobile ? "" : "mb-2"}>
+              <div>
                 <a href="https://bookstack.j551n.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-tech-500 transition-colors">Bookstack</a>
               </div>
-              <div className={isMobile ? "" : "mb-2"}>
+              <div>
                 <a href="https://repo.j551n.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-tech-500 transition-colors">Repo</a>
               </div>
-              <div className={isMobile ? "" : "mb-2"}>
+              <div>
                 <a href="https://notes.j551n.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-tech-500 transition-colors">Notes</a>
               </div>
-              <div className={isMobile ? "" : "mb-2"}>
+              <div>
                 <a href="https://recipe.j551n.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-tech-500 transition-colors">Recipe</a>
               </div>
-              <div className={isMobile ? "" : "mb-2"}>
+              <div>
                 <a href="https://sign.j551n.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-tech-500 transition-colors">Docuseal</a>
               </div>
-              <div className={isMobile ? "" : "mb-2"}>
+              <div>
                 <a href="https://gitlab.j551n.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-tech-500 transition-colors">Gitlab</a>
-              </div>
-              <div className={isMobile ? "" : "mb-2"}>
-                <a href="https://tools.j551n.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-tech-500 transition-colors">IT Tools</a>
               </div>
             </div>
           </div>
         </div>
         
-        <div className="mt-8 pt-4 border-t text-center text-muted-foreground">
-          <p>© {new Date().getFullYear()} Johannes Nguyen. All rights reserved.</p>
+        <div className="mt-12 pt-6 border-t border-border text-center text-muted-foreground">
+          <p>© {currentYear} Johannes Nguyen. All rights reserved.</p>
         </div>
       </div>
     </footer>

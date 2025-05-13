@@ -4,7 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/theme/ThemeToggle";
-import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger } from "@/components/ui/navigation-menu";
+import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuList, NavigationMenuTrigger } from "@/components/ui/navigation-menu";
 import { cn } from "@/lib/utils";
 
 export function Navbar() {
@@ -45,25 +45,25 @@ export function Navbar() {
 
   return (
     <header className={`fixed w-full z-50 transition-all duration-300 ${
-      scrolled ? "bg-background/95 backdrop-blur-md shadow-md" : "bg-background/80 backdrop-blur-sm border-b border-border"
-    }`}>
-      <nav className="container mx-auto px-4 py-3 flex items-center justify-between">
-        <Link to="/" className="flex items-center space-x-2 transition-transform hover:scale-105">
+      scrolled ? "bg-background/95 backdrop-blur-md" : "bg-background"
+    } border-b border-border`}>
+      <nav className="container mx-auto px-8 py-4 flex items-center justify-between">
+        <Link to="/" className="flex items-center space-x-3">
           <img src="https://bookstack.j551n.com/uploads/images/system/2024-08/screenshot-2024-04-06-190141.png" alt="J551N" className="h-8 w-8" />
-          <span className="font-bold text-lg text-tech-700 dark:text-tech-400">Johannes Nguyen</span>
+          <span className="font-medium text-lg">Johannes Nguyen</span>
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center space-x-6">
+        <div className="hidden md:flex items-center space-x-8">
           <NavigationMenu>
-            <NavigationMenuList>
+            <NavigationMenuList className="space-x-6">
               {navItems.map((item) => (
                 <NavigationMenuItem key={item.name}>
                   <Link
                     to={item.path}
                     className={cn(
-                      "text-foreground/80 hover:text-tech-600 dark:hover:text-tech-400 transition-colors py-2 px-3 rounded-md",
-                      location.pathname === item.path && "text-tech-600 dark:text-tech-400 font-medium"
+                      "text-foreground hover:text-tech-600 transition-colors py-2",
+                      location.pathname === item.path && "text-tech-600 font-medium"
                     )}
                   >
                     {item.name}
@@ -71,20 +71,20 @@ export function Navbar() {
                 </NavigationMenuItem>
               ))}
               <NavigationMenuItem>
-                <NavigationMenuTrigger className="text-foreground/80 hover:text-tech-600 dark:hover:text-tech-400">
+                <NavigationMenuTrigger className="text-foreground hover:text-tech-600 bg-transparent hover:bg-transparent">
                   Services
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <div className="grid grid-cols-2 gap-3 p-4 w-[400px]">
+                  <div className="grid grid-cols-2 gap-2 p-4 w-[400px] rounded-none border-2 border-border">
                     {popularServices.map((service) => (
                       <a
                         key={service.name}
                         href={`https://${service.url}`}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex p-2 hover:bg-muted rounded-md transition-colors"
+                        className="flex p-2 hover:bg-muted rounded-none transition-colors"
                       >
-                        <div className="text-sm font-medium text-foreground">{service.name}</div>
+                        <div className="text-sm font-medium">{service.name}</div>
                       </a>
                     ))}
                   </div>
@@ -102,7 +102,7 @@ export function Navbar() {
             variant="ghost" 
             onClick={toggleMenu}
             size="icon"
-            className="transition-transform hover:scale-110"
+            className="rounded-none"
           >
             {isMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
           </Button>
@@ -111,33 +111,31 @@ export function Navbar() {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-background border-b animate-slide-in-down">
-          <div className="container mx-auto px-4 py-3 flex flex-col space-y-4">
-            {navItems.map((item, index) => (
+        <div className="md:hidden bg-background border-b">
+          <div className="container mx-auto px-8 py-4 flex flex-col space-y-4">
+            {navItems.map((item) => (
               <Link
                 key={item.name}
                 to={item.path}
                 className={cn(
-                  "text-foreground/80 hover:text-tech-600 dark:hover:text-tech-400 transition-colors py-2 animate-fade-up",
-                  location.pathname === item.path && "text-tech-600 dark:text-tech-400 font-medium"
+                  "text-foreground hover:text-tech-600 transition-colors py-2",
+                  location.pathname === item.path && "text-tech-600 font-medium"
                 )}
                 onClick={toggleMenu}
-                style={{ animationDelay: `${index * 0.05}s` }}
               >
                 {item.name}
               </Link>
             ))}
             <div className="py-2 border-t border-border mt-2 pt-4">
-              <p className="text-sm font-medium mb-2 animate-fade-up" style={{ animationDelay: "0.2s" }}>Popular Services:</p>
+              <p className="text-sm font-medium mb-2">Popular Services:</p>
               <div className="grid grid-cols-2 gap-2">
-                {popularServices.map((service, index) => (
+                {popularServices.map((service) => (
                   <a
                     key={service.name}
                     href={`https://${service.url}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-sm text-foreground/80 hover:text-tech-600 dark:hover:text-tech-400 transition-colors animate-fade-up"
-                    style={{ animationDelay: `${0.25 + index * 0.05}s` }}
+                    className="text-sm text-foreground/80 hover:text-tech-600 transition-colors"
                   >
                     {service.name}
                   </a>
