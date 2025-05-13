@@ -26,7 +26,6 @@ export function Navbar() {
   // Base navigation items
   const navItems = [
     { name: "Home", path: "/" },
-    { name: "ADHD Story", path: "/adhd-story" },
     { name: "Homelab", path: "/homelab" },
     { name: "Legal", path: "/legal" }
   ];
