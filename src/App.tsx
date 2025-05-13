@@ -11,7 +11,6 @@ import Legal from "./pages/Legal";
 import LegalPrivacy from "./pages/LegalPrivacy";
 import LegalNotice from "./pages/LegalNotice";
 import NotFound from "./pages/NotFound";
-import ADHDStory from "./pages/ADHDStory";
 import Homelab from "./pages/Homelab";
 
 const queryClient = new QueryClient();
@@ -26,7 +25,6 @@ const App = () => (
           <BrowserRouter>
             <Routes>
               <Route path="/" element={<Index />} />
-              <Route path="/adhd-story" element={<ADHDStory />} />
               <Route path="/homelab" element={<Homelab />} />
               <Route path="/legal" element={<Legal />} />
               <Route path="/legal/privacy" element={<LegalPrivacy />} />

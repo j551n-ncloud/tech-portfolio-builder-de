@@ -1,6 +1,6 @@
 
 import { Link } from "react-router-dom";
-import { Github, Mail } from "lucide-react";
+import { Github, Mail, Linkedin } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
 
 export function Footer() {
@@ -20,6 +20,9 @@ export function Footer() {
               <a href="https://github.com/j551n-ncloud" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-tech-500 transition-colors">
                 <Github className="h-5 w-5" />
               </a>
+              <a href="https://www.linkedin.com/in/johannesquangminh" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-tech-500 transition-colors">
+                <Linkedin className="h-5 w-5" />
+              </a>
               <a href="mailto:johannes.quangminh.nguyen@gmail.com" className="text-foreground hover:text-tech-500 transition-colors">
                 <Mail className="h-5 w-5" />
               </a>
@@ -32,11 +35,6 @@ export function Footer() {
               <li>
                 <Link to="/" className="text-muted-foreground hover:text-tech-500 transition-colors">
                   Home
-                </Link>
-              </li>
-              <li>
-                <Link to="/adhd-story" className="text-muted-foreground hover:text-tech-500 transition-colors">
-                  ADHD Story
                 </Link>
               </li>
               <li>
