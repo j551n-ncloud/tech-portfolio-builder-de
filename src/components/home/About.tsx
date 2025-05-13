@@ -30,7 +30,7 @@ export function About() {
     <section id="about" className="py-24 bg-background">
       <div className="container mx-auto px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
-          <div className="lg:col-span-5">
+          <div className="lg:col-span-5 animate-float-up">
             <h2 className="text-4xl font-bold mb-8">About Me</h2>
             <p className="text-lg text-muted-foreground mb-6">
               I am a system administrator with a passion for Windows and Unix. Currently, I am working as an apprentice system integrator at the German Cancer Research Center.
@@ -46,9 +46,9 @@ export function About() {
           <div className="lg:col-span-7">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {skills.map((skill, index) => (
-                <Card key={index} className="bg-card border-2 border-border rounded-none hover:border-tech-500 transition-colors">
+                <Card key={index} className="bg-card border-2 border-border rounded-none hover:border-blue-500 transition-colors staggered-item animate-fade-up hover-lift">
                   <CardHeader className="p-6">
-                    <div className="w-12 h-12 flex items-center justify-center bg-tech-50 text-tech-600 mb-4">
+                    <div className="w-12 h-12 flex items-center justify-center bg-blue-50 text-blue-600 mb-4">
                       <skill.icon className="h-6 w-6" />
                     </div>
                     <CardTitle className="text-xl">{skill.title}</CardTitle>

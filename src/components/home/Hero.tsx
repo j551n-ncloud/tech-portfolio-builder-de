@@ -23,29 +23,29 @@ export function Hero() {
               <img 
                 src="https://bookstack.j551n.com/uploads/images/system/2024-08/screenshot-2024-04-06-190141.png" 
                 alt="Logo" 
-                className="w-16 h-16 rounded-sm border border-border"
+                className="w-16 h-16 rounded-sm border border-border animate-rotate-in animate-pulse-glow"
               />
             </div>
             
             <div className="space-y-6">
-              <h1 className="text-5xl lg:text-7xl font-bold tracking-tight">
+              <h1 className="text-5xl lg:text-7xl font-bold tracking-tight animate-float-up">
                 Johannes Nguyen
               </h1>
               
-              <h2 className="text-2xl lg:text-3xl font-normal">
-                IT Technician, <span className="text-tech-500">System Administrator</span>, <br className="hidden md:block" />
+              <h2 className="text-2xl lg:text-3xl font-normal animate-slide-in-left" style={{animationDelay: "0.2s"}}>
+                IT Technician, <span className="text-blue-500">System Administrator</span>, <br className="hidden md:block" />
                 Apprentice & Homelab Enthusiast
               </h2>
               
-              <p className="text-xl text-muted-foreground">
+              <p className="text-xl text-muted-foreground animate-fade-in" style={{animationDelay: "0.4s"}}>
                 Passionate about Linux, virtualization, and infrastructure as code. <br className="hidden md:block" />
                 Currently working at the German Cancer Research Center.
               </p>
             </div>
             
-            <div className="flex flex-col sm:flex-row gap-4 pt-4">
+            <div className="flex flex-col sm:flex-row gap-4 pt-4 animate-fade-up" style={{animationDelay: "0.6s"}}>
               <Button 
-                className="bg-tech-600 hover:bg-tech-700 rounded-none"
+                className="bg-blue-600 hover:bg-blue-700 rounded-none hover-glow"
                 onClick={handleContactClick}
               >
                 <Mail className="mr-2 h-4 w-4" />
@@ -54,7 +54,7 @@ export function Hero() {
               <Button 
                 variant="outline" 
                 onClick={scrollToAbout}
-                className="rounded-none group border-2 hover:bg-muted"
+                className="rounded-none group border-2 hover:bg-muted hover-lift"
               >
                 Learn More
                 <ArrowDown className="ml-2 h-4 w-4 group-hover:animate-bounce" />
@@ -64,7 +64,7 @@ export function Hero() {
         </div>
 
         <div className="hidden lg:block lg:col-span-2">
-          <div className="aspect-square bg-tech-500"></div>
+          <div className="aspect-square bg-blue-500 animate-pulse-glow"></div>
         </div>
       </div>
       

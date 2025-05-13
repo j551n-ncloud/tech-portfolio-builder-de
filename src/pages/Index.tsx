@@ -30,9 +30,9 @@ const Index = () => {
           <img 
             src="https://bookstack.j551n.com/uploads/images/system/2024-08/screenshot-2024-04-06-190141.png" 
             alt="Logo" 
-            className="w-16 h-16 mx-auto mb-4 animate-bounce-in"
+            className="w-16 h-16 mx-auto mb-4 animate-bounce-in animate-pulse-glow"
           />
-          <div className="text-2xl font-bold text-tech-600 dark:text-tech-400 animate-fade-in">Loading...</div>
+          <div className="text-2xl font-bold text-blue-600 dark:text-blue-400 animate-fade-in">Loading...</div>
         </div>
       </div>
     );
@@ -42,10 +42,18 @@ const Index = () => {
     <Layout>
       <div className={`space-y-0 overflow-hidden ${isMobile ? 'pt-0' : ''}`}>
         <Hero />
-        <About />
-        <Career />
-        <Expertise />
-        <Services />
+        <div className="animate-float-up" style={{animationDelay: "0.3s"}}>
+          <About />
+        </div>
+        <div className="animate-float-up" style={{animationDelay: "0.5s"}}>
+          <Career />
+        </div>
+        <div className="animate-float-up" style={{animationDelay: "0.7s"}}>
+          <Expertise />
+        </div>
+        <div className="animate-float-up" style={{animationDelay: "0.9s"}}>
+          <Services />
+        </div>
       </div>
     </Layout>
   );
