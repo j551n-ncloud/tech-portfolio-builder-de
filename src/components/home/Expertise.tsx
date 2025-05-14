@@ -26,141 +26,141 @@ export function Expertise() {
   const expertiseData = [
     {
       area: "Proxmox",
-      experience: "Creating, managing, and configuring VMs and LXC containers",
-      additionalKnowledge: "GPU Passthrough, Ceph, Clustering, Configuring",
+      experience: "VM & LXC container management",
+      additionalKnowledge: "GPU Passthrough, Ceph, Clustering",
       icon: <Server className="h-5 w-5 text-tech-500" />
     },
     {
       area: "General Support",
-      experience: "Comprehensive support for technical needs and issues",
-      additionalKnowledge: "User training and documentation, Mac & Windows Support, Linux support",
+      experience: "Technical troubleshooting & solutions",
+      additionalKnowledge: "User training, Mac/Windows/Linux support",
       icon: <Settings className="h-5 w-5 text-tech-500" />
     },
     {
       area: "Docker",
-      experience: "Configuring Docker containers, managing, and troubleshooting",
+      experience: "Container deployment & orchestration",
       additionalKnowledge: "Docker Compose, Dockerfile optimization",
       icon: <Database className="h-5 w-5 text-tech-500" />
     },
     {
       area: "Linux",
-      experience: "Managing services like Nextcloud, Docker, and NAS applications",
-      additionalKnowledge: "cgroups/systemd resource control, RHEL, auditing users via auditd",
+      experience: "Server administration & service management",
+      additionalKnowledge: "cgroups/systemd, RHEL, auditd",
       icon: <Terminal className="h-5 w-5 text-tech-500" />
     },
     {
       area: "VMware",
-      experience: "Creating, managing, and configuring VMs",
+      experience: "Enterprise virtualization",
       additionalKnowledge: "Migration to Proxmox",
       icon: <Server className="h-5 w-5 text-tech-500" />
     },
     {
-      area: "Fullstack Developer",
-      experience: "Partial fullstack development.",
-      additionalKnowledge: "Typescript, Supabase, Javascript, Vite, Express",
+      area: "Fullstack Development",
+      experience: "Web application development",
+      additionalKnowledge: "TypeScript, Supabase, JavaScript, Vite, Express",
       icon: <Laptop className="h-5 w-5 text-tech-500" />
     },
     {
       area: "Kubernetes",
-      experience: "Container orchestration, deployment, and scaling",
-      additionalKnowledge: "Helm charts, custom operators, Deployment of K3S behind Proxy",
+      experience: "Container orchestration & scaling",
+      additionalKnowledge: "Helm charts, K3S deployment, custom operators",
       icon: <Globe className="h-5 w-5 text-tech-500" />
     },
     {
       area: "Ansible",
-      experience: "Automation and configuration management",
-      additionalKnowledge: "Playbook development, inventory management, Playbook integration with AWX",
+      experience: "Infrastructure automation",
+      additionalKnowledge: "Playbook development, AWX integration",
       icon: <Settings className="h-5 w-5 text-tech-500" />
     },
     {
       area: "Networking",
-      experience: "Configuring and troubleshooting network setups",
+      experience: "Network configuration & troubleshooting",
       additionalKnowledge: "LACP bonds, VLANs, routing, IPAM, Netbox",
       icon: <Network className="h-5 w-5 text-tech-500" />
     },
     {
       area: "CI/CD",
-      experience: "Implementing and managing continuous integration and deployment pipelines",
-      additionalKnowledge: "GitHub Actions, Jenkins, Gitlab CI/CD",
+      experience: "Pipeline implementation & management",
+      additionalKnowledge: "GitHub Actions, Jenkins, GitLab CI/CD",
       icon: <Code className="h-5 w-5 text-tech-500" />
     },
     {
       area: "Bash Scripting",
-      experience: "Writing and maintaining scripts for automation and system administration",
-      additionalKnowledge: "Advanced shell utilities, performance optimization",
+      experience: "Automation scripting",
+      additionalKnowledge: "Shell utilities, performance optimization",
       icon: <Terminal className="h-5 w-5 text-tech-500" />
     },
     {
       area: "Server Maintenance",
-      experience: "Regular upkeep, monitoring, and troubleshooting of server systems",
-      additionalKnowledge: "Proactive monitoring, performance tuning, Grafana",
+      experience: "Proactive monitoring & troubleshooting",
+      additionalKnowledge: "Performance tuning, Grafana",
       icon: <Server className="h-5 w-5 text-tech-500" />
     },
     {
       area: "RStudio Server",
-      experience: "Installation, configuration, and maintenance",
+      experience: "Installation & configuration",
       additionalKnowledge: "License management",
       icon: <Cpu className="h-5 w-5 text-tech-500" />
     },
     {
       area: "AXW-Operator",
-      experience: "1 & 1/2 years of experience working with AXW-Operator",
-      additionalKnowledge: "Advanced troubleshooting, customization",
+      experience: "1.5 years operational experience",
+      additionalKnowledge: "Troubleshooting, customization",
       icon: <Settings className="h-5 w-5 text-tech-500" />
     },
     {
-      area: "Build & Compiling",
-      experience: "Easy build and compiling of modules",
-      additionalKnowledge: "Cross-platform compatibility, optimization techniques", 
+      area: "Build & Compile",
+      experience: "Module building & compilation",
+      additionalKnowledge: "Cross-platform compatibility, optimization", 
       icon: <Code className="h-5 w-5 text-tech-500" />
     },
     {
       area: "Cluster Management",
-      experience: "Setting up and maintaining high-availability clusters in corporate environments",
-      additionalKnowledge: "Failover configuration, load balancing, Some LSF Knowledge",
+      experience: "High-availability infrastructure",
+      additionalKnowledge: "Failover configuration, LSF knowledge",
       icon: <Server className="h-5 w-5 text-tech-500" />
     },
     {
-      area: "Homelab Setup",
-      experience: "Building and managing personal home lab environments",
-      additionalKnowledge: "LACP bonds, virtualization, self-hosted services, Proxmox, Tailscale",
+      area: "Homelab",
+      experience: "Personal infrastructure management",
+      additionalKnowledge: "Virtualization, self-hosted services, Tailscale",
       icon: <Network className="h-5 w-5 text-tech-500" />
     },
     {
       area: "GitHub",
-      experience: "Version control and collaborative development",
-      additionalKnowledge: "Pull requests, issues, project management",
+      experience: "Version control & collaboration",
+      additionalKnowledge: "PR workflow, project management",
       icon: <Github className="h-5 w-5 text-tech-500" />
     }
   ];
 
   const keySkills = [
     {
-      skill: "Linux System Administration: Active Linux user for 4 years with a strong passion for open-source software. Experienced in using all major Linux server distributions like Debian, Ubuntu, CentOS, etc.",
+      skill: "Linux System Administration: 4+ years using major server distributions (Debian, Ubuntu, CentOS) with strong open-source focus",
       icon: <Terminal className="h-6 w-6 flex-shrink-0 text-tech-500" />
     },
     {
-      skill: "VM Admin: Active hypervisor admin for VMware/Proxmox for 4 years.",
+      skill: "VM Administration: 4+ years managing VMware/Proxmox hypervisors and virtualized environments",
       icon: <Server className="h-6 w-6 flex-shrink-0 text-tech-500" />
     },
     {
-      skill: "DevOps Tools: Experience with DevOps tools like Kubernetes, Ansible, and CI/CD pipelines.",
+      skill: "DevOps Engineering: Kubernetes, Ansible, CI/CD pipelines and infrastructure as code",
       icon: <Code className="h-6 w-6 flex-shrink-0 text-tech-500" />
     },
     {
-      skill: "Networking: Strong knowledge of networking concepts and technologies, including LACP bonds.",
+      skill: "Networking: Advanced configuration including LACP bonds, VLANs, and routing protocols",
       icon: <Network className="h-6 w-6 flex-shrink-0 text-tech-500" />
     },
     {
-      skill: "Security & Auditing: Experience in auditing users via auditd and enforcing system resource control via cgroups/systemd.",
+      skill: "Security & Compliance: User auditing via auditd and system resource control via cgroups/systemd",
       icon: <Globe className="h-6 w-6 flex-shrink-0 text-tech-500" />
     },
     {
-      skill: "Scripting & Automation: Proficient in Bash scripting for automation and system management.",
+      skill: "Automation: Bash scripting and tooling for system management and workflow optimization",
       icon: <Terminal className="h-6 w-6 flex-shrink-0 text-tech-500" />
     },
     {
-      skill: "Build & Compiling: Experienced in easy build and compiling of modules.",
+      skill: "Software Engineering: Module building, compilation and cross-platform development",
       icon: <Cpu className="h-6 w-6 flex-shrink-0 text-tech-500" />
     }
   ];
