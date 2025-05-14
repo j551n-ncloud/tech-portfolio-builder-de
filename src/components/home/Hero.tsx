@@ -45,11 +45,11 @@ export function Hero() {
             
             <div className="flex flex-col sm:flex-row gap-4 pt-4 animate-fade-up" style={{animationDelay: "0.6s"}}>
               <Button 
-                className="bg-blue-600 hover:bg-blue-700 rounded-none hover-glow group"
+                className="bg-blue-600 hover:bg-blue-700 rounded-none hover-glow"
                 onClick={handleContactClick}
               >
-                <Mail className="mr-2 h-4 w-4 group-hover:animate-pulse" />
-                <span className="group-hover:scale-105 transition-transform duration-300">Contact Me</span>
+                <Mail className="mr-2 h-4 w-4" />
+                Contact Me
               </Button>
               <Button 
                 variant="outline" 
@@ -64,23 +64,23 @@ export function Hero() {
         </div>
 
         <div className="hidden lg:block lg:col-span-2">
-          <div className="aspect-square bg-blue-500 animate-pulse-glow animate-fade-in" style={{animationDelay: "0.8s"}}></div>
+          <div className="aspect-square bg-blue-500 animate-pulse-glow"></div>
         </div>
       </div>
       
       {/* Swiss design grid elements */}
       <div className="absolute top-0 left-0 right-0 bottom-0 z-0 grid grid-cols-12 pointer-events-none">
-        <div className="col-span-1 border-r border-border h-full opacity-0 animate-fade-in" style={{animationDelay: "0.1s"}}></div>
-        <div className="col-span-1 border-r border-border h-full opacity-0 animate-fade-in" style={{animationDelay: "0.15s"}}></div>
-        <div className="col-span-1 border-r border-border h-full opacity-0 animate-fade-in" style={{animationDelay: "0.2s"}}></div>
-        <div className="col-span-1 border-r border-border h-full opacity-0 animate-fade-in" style={{animationDelay: "0.25s"}}></div>
-        <div className="col-span-1 border-r border-border h-full opacity-0 animate-fade-in" style={{animationDelay: "0.3s"}}></div>
-        <div className="col-span-1 border-r border-border h-full opacity-0 animate-fade-in" style={{animationDelay: "0.35s"}}></div>
-        <div className="col-span-1 border-r border-border h-full opacity-0 animate-fade-in" style={{animationDelay: "0.4s"}}></div>
-        <div className="col-span-1 border-r border-border h-full opacity-0 animate-fade-in" style={{animationDelay: "0.45s"}}></div>
-        <div className="col-span-1 border-r border-border h-full opacity-0 animate-fade-in" style={{animationDelay: "0.5s"}}></div>
-        <div className="col-span-1 border-r border-border h-full opacity-0 animate-fade-in" style={{animationDelay: "0.55s"}}></div>
-        <div className="col-span-1 border-r border-border h-full opacity-0 animate-fade-in" style={{animationDelay: "0.6s"}}></div>
+        <div className="col-span-1 border-r border-border h-full"></div>
+        <div className="col-span-1 border-r border-border h-full"></div>
+        <div className="col-span-1 border-r border-border h-full"></div>
+        <div className="col-span-1 border-r border-border h-full"></div>
+        <div className="col-span-1 border-r border-border h-full"></div>
+        <div className="col-span-1 border-r border-border h-full"></div>
+        <div className="col-span-1 border-r border-border h-full"></div>
+        <div className="col-span-1 border-r border-border h-full"></div>
+        <div className="col-span-1 border-r border-border h-full"></div>
+        <div className="col-span-1 border-r border-border h-full"></div>
+        <div className="col-span-1 border-r border-border h-full"></div>
       </div>
     </section>
   );

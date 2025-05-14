@@ -11,7 +11,6 @@ import { useIsMobile } from "@/hooks/use-mobile";
 
 const Index = () => {
   const [isLoading, setIsLoading] = useState(true);
-  const [hasScrolled, setHasScrolled] = useState(false);
   const isMobile = useIsMobile();
 
   useEffect(() => {
@@ -22,20 +21,7 @@ const Index = () => {
     const timer = setTimeout(() => {
       setIsLoading(false);
     }, 500);
-
-    // Add scroll listener for animations
-    const handleScroll = () => {
-      if (window.scrollY > 100) {
-        setHasScrolled(true);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    
-    return () => {
-      clearTimeout(timer);
-      window.removeEventListener("scroll", handleScroll);
-    };
+    return () => clearTimeout(timer);
   }, []);
 
   if (isLoading) {
@@ -57,28 +43,16 @@ const Index = () => {
     <Layout>
       <div className={`space-y-0 overflow-hidden ${isMobile ? 'pt-0' : ''}`}>
         <Hero />
-        <div 
-          className="animate-float-up opacity-0" 
-          style={{animationDelay: "0.3s", animationFillMode: "forwards"}}
-        >
+        <div className="animate-float-up" style={{animationDelay: "0.3s"}}>
           <About />
         </div>
-        <div 
-          className="animate-float-up opacity-0" 
-          style={{animationDelay: "0.5s", animationFillMode: "forwards"}}
-        >
+        <div className="animate-float-up" style={{animationDelay: "0.5s"}}>
           <Career />
         </div>
-        <div 
-          className="animate-float-up opacity-0" 
-          style={{animationDelay: "0.7s", animationFillMode: "forwards"}}
-        >
+        <div className="animate-float-up" style={{animationDelay: "0.7s"}}>
           <Expertise />
         </div>
-        <div 
-          className="animate-float-up opacity-0" 
-          style={{animationDelay: "0.9s", animationFillMode: "forwards"}}
-        >
+        <div className="animate-float-up" style={{animationDelay: "0.9s"}}>
           <Services />
         </div>
       </div>
