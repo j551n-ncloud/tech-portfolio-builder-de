@@ -5,6 +5,7 @@ import { About } from "@/components/home/About";
 import { Career } from "@/components/home/Career";
 import { Expertise } from "@/components/home/Expertise";
 import { Services } from "@/components/home/Services";
+import { FloatingContactButton } from "@/components/home/FloatingContactButton";
 import { useEffect, useState } from "react";
 import { useIsMobile } from "@/hooks/use-mobile";
 
@@ -55,6 +56,7 @@ const Index = () => {
           <Services />
         </div>
       </div>
+      <FloatingContactButton />
     </Layout>
   );
 };
