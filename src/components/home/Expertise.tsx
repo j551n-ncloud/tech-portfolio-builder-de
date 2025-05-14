@@ -136,31 +136,31 @@ export function Expertise() {
 
   const keySkills = [
     {
-      skill: "Linux System Administration: 4+ years using major server distributions (Debian, Ubuntu, CentOS) with strong open-source focus",
+      skill: "Linux: 4+ years with server distributions (Debian, Ubuntu, CentOS) and open-source focus",
       icon: <Terminal className="h-6 w-6 flex-shrink-0 text-tech-500" />
     },
     {
-      skill: "VM Administration: 4+ years managing VMware/Proxmox hypervisors and virtualized environments",
+      skill: "Virtualization: 4+ years managing VMware/Proxmox hypervisors and environments",
       icon: <Server className="h-6 w-6 flex-shrink-0 text-tech-500" />
     },
     {
-      skill: "DevOps Engineering: Kubernetes, Ansible, CI/CD pipelines and infrastructure as code",
+      skill: "DevOps: Kubernetes, Ansible, CI/CD pipelines and infrastructure as code",
       icon: <Code className="h-6 w-6 flex-shrink-0 text-tech-500" />
     },
     {
-      skill: "Networking: Advanced configuration including LACP bonds, VLANs, and routing protocols",
+      skill: "Networking: LACP bonds, VLANs, routing protocols and network management",
       icon: <Network className="h-6 w-6 flex-shrink-0 text-tech-500" />
     },
     {
-      skill: "Security & Compliance: User auditing via auditd and system resource control via cgroups/systemd",
+      skill: "Security: User auditing (auditd) and system resource control (cgroups/systemd)",
       icon: <Globe className="h-6 w-6 flex-shrink-0 text-tech-500" />
     },
     {
-      skill: "Automation: Bash scripting and tooling for system management and workflow optimization",
+      skill: "Automation: Bash scripting for system management and workflow optimization",
       icon: <Terminal className="h-6 w-6 flex-shrink-0 text-tech-500" />
     },
     {
-      skill: "Software Engineering: Module building, compilation and cross-platform development",
+      skill: "Software Engineering: Module building and cross-platform development",
       icon: <Cpu className="h-6 w-6 flex-shrink-0 text-tech-500" />
     }
   ];
@@ -176,8 +176,8 @@ export function Expertise() {
         </div>
 
         <div className="mb-12">
-          <Accordion type="single" collapsible defaultValue="expertise-table" className="bg-card shadow-sm rounded-lg overflow-hidden animate-scale-in">
-            <AccordionItem value="expertise-table">
+          <Accordion type="single" collapsible defaultValue="expertise-card-view" className="bg-card shadow-sm rounded-lg overflow-hidden animate-scale-in">
+            <AccordionItem value="expertise-card-view">
               <AccordionTrigger className="p-4 border-b font-semibold">
                 <div className="flex items-center gap-2">
                   <Settings className="h-5 w-5 text-tech-500" />
@@ -185,27 +185,21 @@ export function Expertise() {
                 </div>
               </AccordionTrigger>
               <AccordionContent>
-                <div className="overflow-x-auto p-2">
-                  <Table>
-                    <TableHeader>
-                      <TableRow className="bg-muted">
-                        <TableHead className="w-[50px]"></TableHead>
-                        <TableHead className="w-[150px]">AREA</TableHead>
-                        <TableHead>EXPERIENCE</TableHead>
-                        <TableHead>ADDITIONAL KNOWLEDGE</TableHead>
-                      </TableRow>
-                    </TableHeader>
-                    <TableBody>
-                      {expertiseData.map((item, index) => (
-                        <TableRow key={index} className="transition-all duration-300 hover:bg-muted/80">
-                          <TableCell className="p-2">{item.icon}</TableCell>
-                          <TableCell className="p-2 font-medium text-tech-600 dark:text-tech-400">{item.area}</TableCell>
-                          <TableCell className="p-2">{item.experience}</TableCell>
-                          <TableCell className="p-2">{item.additionalKnowledge}</TableCell>
-                        </TableRow>
-                      ))}
-                    </TableBody>
-                  </Table>
+                <div className="p-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                  {expertiseData.map((item, index) => (
+                    <Card key={index} className="hover:shadow-md transition-shadow duration-300">
+                      <CardContent className="p-4">
+                        <div className="flex items-center gap-3 mb-2">
+                          {item.icon}
+                          <h3 className="font-medium text-tech-600 dark:text-tech-400">{item.area}</h3>
+                        </div>
+                        <p className="text-sm text-muted-foreground mb-1">{item.experience}</p>
+                        <p className="text-xs text-muted-foreground/80 italic">
+                          <span className="font-medium">Knowledge:</span> {item.additionalKnowledge}
+                        </p>
+                      </CardContent>
+                    </Card>
+                  ))}
                 </div>
               </AccordionContent>
             </AccordionItem>
