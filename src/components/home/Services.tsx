@@ -1,5 +1,4 @@
-
-import { Server, Cloud, Book, Utensils, Activity, StickyNote, Package, Shield, GitBranch, Wrench, FileSignature, Film, BrainCircuit } from "lucide-react";
+import { Server, Cloud, Book, Utensils, Activity, StickyNote, Package, Shield, GitBranch, Wrench, FileSignature, BrainCircuit } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useIsMobile } from "@/hooks/use-mobile";
 
@@ -78,12 +77,6 @@ export function Services() {
       title: "Docuseal",
       url: "sign.j551n.com",
       description: "Easily sign documents digitally with security and compliance with industry standards."
-    },
-    {
-      icon: Film,
-      title: "Jellyfin Streaming",
-      url: "Private URL",
-      description: "Organize and stream your favorite movies, TV shows, and music from any device."
     }
   ];
 
