@@ -20,7 +20,7 @@ const Homelab = () => {
         <div className="hidden md:block absolute top-20 right-10 w-64 h-64 bg-tech-500/5 rounded-full blur-3xl"></div>
         <div className="hidden md:block absolute bottom-40 left-10 w-72 h-72 bg-tech-600/5 rounded-full blur-3xl"></div>
         
-        <div className="container mx-auto px-4 py-16">
+        <div className="container mx-auto px-4 py-24">
           <div className="max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gradient-primary animate-fade-in">My Homelab: Exploring Three Proxmox Nodes</h1>
             
