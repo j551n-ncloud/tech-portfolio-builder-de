@@ -7,7 +7,7 @@ import { FileText, Shield } from "lucide-react";
 const Legal = () => {
   return (
     <Layout>
-      <div className="container mx-auto px-4 py-12">
+      <div className="container mx-auto px-4 py-24">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-3xl font-bold mb-6">Legal Documents</h1>
           <p className="text-muted-foreground mb-8">
